@@ -1,0 +1,9 @@
+# The detection regexes in png_scrub.py are patterns, not credentials.
+title = "comfyui-save-image-scrubbed"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Credential-shape definitions in the scrubber itself"
+paths = ['''^png_scrub\.py$''']

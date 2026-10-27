@@ -1,0 +1,24 @@
+[project]
+name = "comfyui-save-image-scrubbed"
+version = "0.1.0"
+description = "A ComfyUI Save Image node that strips API keys and other credentials from the metadata it embeds in PNGs."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/aion88/comfyui-save-image-scrubbed"
+
+[tool.comfy]
+PublisherId = "aion88"
+DisplayName = "Save Image (scrubbed)"
+Icon = ""
+
+[dependency-groups]
+dev = ["pytest>=8", "pillow>=10"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "--import-mode=importlib --confcutdir=tests"
